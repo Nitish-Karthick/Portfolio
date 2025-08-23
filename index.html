@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28' fill='%233b82f6'%3e%3cpath d='M8,22V10c0-3.3,2.7-6,6-6s6,2.7,6,6v12h-2V10c0-2.2-1.8-4-4-4s-4,1.8-4,4v12H8z'/%3e%3c/svg%3e" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/index.css" />
+    
+    <!-- 1. SystemJS for module loading and transpilation -->
+    <script src="https://unpkg.com/systemjs@6.14.3/dist/s.min.js"></script>
+    <script src="https://unpkg.com/systemjs-babel@6.5.0/dist/systemjs-babel.js"></script>
+
+    <!-- 2. SystemJS Import Map -->
+    <script type="systemjs-importmap">
+      {
+        "imports": {
+          "react": "https://esm.sh/react@18.2.0",
+          "react-dom/client": "https://esm.sh/react-dom@18.2.0/client"
+        }
+      }
+    </script>
+
+    <!-- 3. SystemJS Configuration -->
+    <script>
+      // Configure SystemJS to use Babel for transpiling TS/TSX files
+      System.config({
+        meta: {
+          // Tell SystemJS to use the babel transpiler for these file extensions
+          '*.ts': { loader: 'systemjs-babel' },
+          '*.tsx': { loader: 'systemjs-babel' }
+        },
+        // Pass presets to Babel
+        babelOptions: {
+          presets: ['react', 'typescript']
+        }
+      });
+      
+      // Import the application's entry point
+      System.import('/index.tsx');
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

@@ -45,7 +45,7 @@ export const EXPERIENCE: ExperienceItem[] = [];
 
 export const EDUCATION: EducationItem[] = [
   {
-    degree: 'B.Tech. in Computer Science Engineering',
+    degree: 'B.Tech. in Artificial Intelligence & Data Science',
     institution: 'Sri Eshwar College of Engineering, Coimbatore',
     period: '2024 - Present',
   },

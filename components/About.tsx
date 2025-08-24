@@ -18,7 +18,7 @@ const About: React.FC = () => {
           </div>
           <div className="about-text">
             <p>
-             I'm a passionate Computer Science Engineering student with a solid background in full-stack web development and a strong interest in Artificial Intelligence. My journey in technology comes from a desire to solve complex problems and create user-friendly applications that have a meaningful impact.           
+             I'm a passionate Artificial Intelligence & Data Science (AIDS) student with a solid background in full-stack web development and a strong interest in Artificial Intelligence. My journey in technology comes from a desire to solve complex problems and create user-friendly applications that have a meaningful impact.           
               </p>
             <p>
              My technical skills cover both front-end and back-end development, with knowledge in technologies like React, Node.js, Python and Java. I am especially fascinated by Natural Language Processing and Large Language Models.         

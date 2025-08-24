@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
             </a>
           ))}
         </div>
-        <p>&copy; {new Date().getFullYear()} Nitish karthick V. All Rights Reserved.</p>
+        <p>&copy; {new Date().getFullYear()} </p>
       </div>
     </footer>
   );

@@ -109,8 +109,7 @@ const Contact: React.FC = () => {
           <div className="contact-info">
             <div className="contact-details">
               <div className="contact-item">
-                  <EmailIcon className="icon" />
-                  <a href="mailto:nitishkarthick279@gmail.com">nitishkarthick279@gmail.com</a>
+
               </div>
             </div>
           </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import { useTypewriter } from '../hooks/useTypewriter.ts';
 
 const Hero: React.FC = () => {
-  const subtitleText = "An Full-Stack Developer with a passion for modern web development and AI innovation.";
+  const subtitleText = "A Full-Stack Developer with a passion for modern web development and AI innovation.";
   const typedSubtitle = useTypewriter(subtitleText, 30);
 
   return (

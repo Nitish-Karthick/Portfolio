@@ -8,6 +8,7 @@ export interface Project {
   description: string;
   imageUrl: string;
   liveUrl?: string;
+  backendUrl?: string;
   repoUrl: string;
   tags: string[];
 }

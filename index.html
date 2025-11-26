@@ -10,47 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/index.css" />
     
-    <!-- 1. SystemJS for module loading and transpilation -->
-    <script src="https://unpkg.com/systemjs@6.14.3/dist/s.min.js"></script>
-    <script src="https://unpkg.com/systemjs-babel@6.5.0/dist/systemjs-babel.js"></script>
 
-    <!-- 2. SystemJS Import Map -->
-    <script type="systemjs-importmap">
-      {
-        "imports": {
-          "react": "https://esm.sh/react@18.2.0",
-          "react-dom/client": "https://esm.sh/react-dom@18.2.0/client"
-        }
-      }
-    </script>
-
-    <!-- 3. SystemJS Configuration -->
-    <script>
-      // Configure SystemJS to use Babel for transpiling TS/TSX files
-      System.config({
-        meta: {
-          // Tell SystemJS to use the babel transpiler for these file extensions
-          '*.ts': { loader: 'systemjs-babel' },
-          '*.tsx': { loader: 'systemjs-babel' }
-        },
-        // Pass presets to Babel
-        babelOptions: {
-          presets: ['react', 'typescript']
-        }
-      });
-      
-      // Import the application's entry point
-      System.import('/index.tsx');
-    </script>
-  <script type="importmap">
-{
-  "imports": {
-    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
-    "react/": "https://esm.sh/react@^19.1.1/",
-    "react": "https://esm.sh/react@^19.1.1"
-  }
-}
-</script>
 <link rel="stylesheet" href="/index.css">
 </head>
   <body>

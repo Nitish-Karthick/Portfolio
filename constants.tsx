@@ -64,8 +64,8 @@ export const PROJECTS: Project[] = [
     - **Desktop Integration:** Includes a PyQt5-based desktop application for offline access and specific laboratory controls.
 
     **Demo Credentials:**
-    - **Username:** nitish
-    - **Password:** 1234`,
+    - **Username:** admin
+    - **Password:** Chemflux@12345`,
     imageUrl: chemflux,
     repoUrl: 'https://github.com/Nitish-Karthick/ChemFlux',
     liveUrl: 'https://chemflux.netlify.app/',
